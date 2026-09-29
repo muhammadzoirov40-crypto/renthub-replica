@@ -97,6 +97,22 @@ export default function Sidebar({ theme, onToggleTheme, onOpenBoards }: Props) {
 
       {/* Footer */}
       <div className="border-t border-white/[0.07] px-3 py-3">
+        {/* List-your-asset CTA */}
+        <div className="mb-3 rounded-2xl border border-brand-500/25 bg-gradient-to-b from-brand-500/[0.14] to-transparent p-3.5">
+          <p className="text-[13px] font-bold leading-snug text-white">
+            Есть, что сдавать в аренду?
+          </p>
+          <p className="mt-1 text-[11.5px] leading-snug text-slate-400">
+            Опубликуйте объявление за пару минут.
+          </p>
+          <button
+            type="button"
+            className="mt-3 w-full rounded-xl bg-brand-500 px-3 py-2.5 text-[12.5px] font-bold text-white transition hover:bg-brand-600"
+          >
+            Подать объявление
+          </button>
+        </div>
+
         <button
           type="button"
           onClick={onOpenBoards}
